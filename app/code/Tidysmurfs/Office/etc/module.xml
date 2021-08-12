@@ -1,0 +1,12 @@
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:Module/ etc/module.xsd">
+    <module name="Tidysmurfs_Office" setup_version="1.0.0">
+        <sequence>
+            <module name="Magento_Eav"/>
+        </sequence>
+    </module>
+</config>
+
+
+//The value of setup_version is important because we might use it within ourschema install script
+        (InstallSchema.php) files, effectively turning the install script into an update script.
+
